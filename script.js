@@ -5,6 +5,8 @@ const score0ID = document.getElementById('score--0')
 const score1ID = document.getElementById('score--1')
 const current0EL = document.getElementById('current--0')
 const current1EL = document.getElementById('current--1')
+const name0EL = document.getElementById('name--0')
+const name1EL = document.getElementById('name--1')
 const diceEL = document.querySelector('.dice')
 const btnNew = document.querySelector('.btn--new')
 const btnRoll = document.querySelector('.btn--roll')
@@ -31,7 +33,9 @@ let currentScore = 0
             currentScore += dice
             current0EL.textContent = currentScore
         } else {
-
+            name1EL
+            currentScore += dice
+            current1EL.textContent = currentScore
         }
     })
 
