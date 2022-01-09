@@ -32,8 +32,8 @@ let currentScore = 0
         if(dice !== 1){
             currentScore += dice
             current0EL.textContent = currentScore
-        } else {
-            statusDisplay.innerHTML = name1EL()
+        } else if (dice = 1) {
+            name1EL
             currentScore += dice
             current1EL.textContent = currentScore
         }
