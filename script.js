@@ -29,15 +29,17 @@ let currentScore = 0
         diceEL.src = `dice-${dice}.png`
 
         // 3. Check for rolled 1: if tru, switch player 
-        if(dice !== 1){
-            currentScore += dice
-            current0EL.textContent = currentScore
-        } else if (dice = 1) {
-            name1EL
-            currentScore += dice
-            current1EL.textContent = currentScore
-        }
-    })
+    //     if(dice !== 1){
+    //         currentScore += dice
+    //         current0EL.textContent = currentScore
+    //     } else if (dice = 1) {
+    //         name1EL
+    //         currentScore += dice
+    //         current1EL.textContent = currentScore
+    //     }
+    // })
+    
+    //Trying to figure a way to switch players!
 
 
 
