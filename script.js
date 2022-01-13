@@ -38,7 +38,7 @@ let activePlayer = 0
         } else {
           activePlayer = activePlayer === 0 ? 1 : 0
             // name1EL
-            currentScore.value = 0
+            // currentScore.value = 0
             // current1EL.textContent = currentScore
         }
     })
