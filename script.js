@@ -12,7 +12,9 @@ const btnNew = document.querySelector('.btn--new')
 const btnRoll = document.querySelector('.btn--roll')
 const btnHold = document.querySelector('.btn--hold')
 
+const scores = [0, 0]
 let currentScore = 0
+let activePlayer = 0
 // Starting Condition
     score0ID.textContent = 0
     score1ID.textContent = 0
