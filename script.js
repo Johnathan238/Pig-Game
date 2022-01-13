@@ -36,9 +36,10 @@ let activePlayer = 0
           document.getElementById(`current--${activePlayer}`).textContent = currentScore
           // current0EL.textContent = currentScore
         } else {
+          document.getElementById(`current--${activePlayer}`).textContent = 0
           activePlayer = activePlayer === 0 ? 1 : 0
             // name1EL
-            // currentScore.value = 0
+            currentScore = 0
             // current1EL.textContent = currentScore
         }
     })
