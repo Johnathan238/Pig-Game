@@ -32,12 +32,14 @@ let activePlayer = 0
 
         // 3. Check for rolled 1: if tru, switch player 
         if(dice !== 1){
-            currentScore += dice
-            current0EL.textContent = currentScore
+          currentScore += dice
+          document.getElementById(`current--${activePlayer}`).textContent = currentScore
+          // current0EL.textContent = currentScore
         } else {
-            name1EL
+          activePlayer = activePlayer === 0 ? 1 : 0
+            // name1EL
             currentScore.value = 0
-            current1EL.textContent = currentScore
+            // current1EL.textContent = currentScore
         }
     })
     
