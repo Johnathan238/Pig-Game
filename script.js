@@ -1,6 +1,8 @@
 'use strict';
 
 // selecting elements
+const player0EL = document.querySelector('.player--0')
+const player1EL = document.querySelector('.player--1')
 const score0ID = document.getElementById('score--0')
 const score1ID = document.getElementById('score--1')
 const current0EL = document.getElementById('current--0')
@@ -39,7 +41,9 @@ let activePlayer = 0
           document.getElementById(`current--${activePlayer}`).textContent = 0
           activePlayer = activePlayer === 0 ? 1 : 0
             // name1EL
-            currentScore = 0
+          currentScore = 0
+          player0EL.classList.toggle('player--active')
+          player1EL.classList.toggle('player--active')
             // current1EL.textContent = currentScore
         }
     })
