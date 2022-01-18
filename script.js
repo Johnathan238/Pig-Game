@@ -48,7 +48,14 @@ let activePlayer = 0
         }
     })
     
-    //Trying to figure a way to switch players!
+    btnHold.addEventListener('click', function(){
+      // 1. Add current score 
+
+      // 2. Check if player's score is >= 100
+      // Finish the game
+
+      // Switch to the next player
+    })
 
 
 
