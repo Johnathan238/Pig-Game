@@ -75,7 +75,10 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
-  
+document.querySelector('.btn--new').addEventListener('click', function(){
+  score0ID.textContent = 0
+  score1ID.textContent = 0
+  })
 // document.querySelector('.again').addEventListener('click', function () {
 //   // let number = Math.trunc(Math.random() * 20) + 1;
 //   document.querySelector('.number').textContent = '?'
