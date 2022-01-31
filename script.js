@@ -80,6 +80,7 @@ document.querySelector('.btn--new').addEventListener('click', function(){
   score1ID.textContent = 0
   current0EL.textContent = 0
   current1EL.textContent = 0
+  document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner')
   })
 // document.querySelector('.again').addEventListener('click', function () {
 //   // let number = Math.trunc(Math.random() * 20) + 1;
