@@ -14,10 +14,23 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
-const scores = [0, 0];
-let currentScore = 0;
-let activePlayer = 0;
-let playing = true;
+let scores, currentScore, activePlayer, playing
+
+
+const freshStart = function (){
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+
+  diceEL.classList.add('hidden');
+  score0ID.textContent = 0
+  score1ID.textContent = 0
+  current0EL.textContent = 0
+  current1EL.textContent = 0
+  document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner')
+}
+freshStart()
 
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -75,13 +88,8 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
-
-btnNew.addEventListener('click', function(){
-  score0ID.textContent = 0
-  score1ID.textContent = 0
-  current0EL.textContent = 0
-  current1EL.textContent = 0
-  document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner')
+document.querySelector('.btn--new').addEventListener('click', function(){
+  freshStart()
   })
 // document.querySelector('.again').addEventListener('click', function () {
 //   // let number = Math.trunc(Math.random() * 20) + 1;
