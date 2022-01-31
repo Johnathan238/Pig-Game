@@ -75,7 +75,8 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
-document.querySelector('.btn--new').addEventListener('click', function(){
+
+btnNew.addEventListener('click', function(){
   score0ID.textContent = 0
   score1ID.textContent = 0
   current0EL.textContent = 0
